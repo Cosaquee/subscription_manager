@@ -5,5 +5,6 @@ require 'rack/contrib'
 use Rack::PostBodyContentTypeParser
 
 run Rack::URLMap.new({
+                       "/" => Public,
                        "/api" => Api
                      })
